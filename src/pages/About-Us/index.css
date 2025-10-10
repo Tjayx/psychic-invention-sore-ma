@@ -1,0 +1,53 @@
+@reference "tailwindcss";
+
+.core-values {
+  @apply w-full pl-4 xl:pl-0 xl:w-[83%] mx-auto mb-[5em];
+}
+
+.core-values h2 {
+  @apply text-[#1F2D3D] text-4xl font-bold mb-[2em];
+}
+
+.core-values p {
+  @apply text-[#1F2D3D] font-bold mb-[1em];
+}
+
+.core-values .values {
+  @apply grid grid-cols-2 md:grid-cols-3 xl:flex items-center gap-4 xl:gap-[1em];
+}
+
+.core-values span {
+  @apply text-[#777777] block;
+}
+
+.management-team {
+  @apply w-[83%] mx-auto mb-[5em];
+}
+
+.management-team h2 {
+  @apply text-[#1F2D3D] text-4xl font-bold mb-[2em] text-center xl:text-start;
+}
+
+.management-team .team {
+  @apply flex flex-col md:grid md:grid-cols-2 xl:flex-row items-center gap-[1em];
+}
+
+.team .member {
+  @apply flex flex-col items-center text-center;
+}
+
+.member h4 {
+  @apply text-[#6fa0cd] mb-1;
+}
+
+.member h3 {
+  @apply text-[#1F2D3D] text-3xl font-bold mb-[1em];
+}
+
+.member p {
+  @apply text-[#777777];
+}
+
+.member span {
+  @apply bg-[#4282bd] w-[100px] h-[2px] mt-[2em];
+}

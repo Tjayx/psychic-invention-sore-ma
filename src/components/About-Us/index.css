@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+.landing-about-us {
+  @apply flex w-full px-5 flex-col xl:w-[70%] xl:mx-auto xl:px-0 xl:flex-row xl:items-center gap-[3em] md:h-[1000px] xl:h-[700px] my-[4em] xl:my-0;
+}
+
+.landing-about-us .left-div {
+  @apply flex flex-col gap-6;
+}
+
+.landing-about-us .images {
+  @apply flex items-center gap-[1em] xl:gap-[2em];
+}
+
+.landing-about-us .who-we-are {
+  @apply text-3xl font-semibold;
+}
+
+.landing-about-us img {
+  @apply w-[150px] md:w-[350px] xl:w-auto;
+}

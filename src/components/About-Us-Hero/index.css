@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.about-hero {
+  @apply w-screen;
+
+  background-image: url("../../assets/engineer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.about-hero .about-hero-components {
+  @apply py-[40%] md:py-[30%] lg:py-[25%] xl:py-[15%] text-white flex flex-col gap-7 w-full text-center;
+  position: relative;
+  z-index: 99999;
+}
+
+.about-hero h1 {
+  @apply text-white text-7xl font-bold;
+}
+
+.about-hero p {
+  @apply text-white;
+}

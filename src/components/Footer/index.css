@@ -1,0 +1,56 @@
+@reference "tailwindcss";
+
+.footer {
+  @apply bg-black w-screen px-2 xl:px-[5em] py-[3em];
+}
+
+.footer img {
+  @apply w-[200px];
+}
+
+.footer .statement {
+  @apply text-[#787878] ml-4 xl:mt-[2em] xl:ml-0;
+}
+
+.footer h3 {
+  @apply text-xl text-white;
+}
+
+.footer a {
+  @apply text-[#4282bd] hover:text-[#376d9f];
+}
+
+.footer .footer-items {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-0;
+}
+
+.footer .item {
+  @apply flex flex-col items-start gap-[1em] ml-4 xl:mt-0 xl:gap-[3em];
+}
+
+.footer .item div {
+  @apply flex flex-col items-start;
+}
+
+.footer .item .address {
+  @apply text-white w-[300px] xl:w-[350px] flex flex-col items-start gap-3;
+}
+
+.footer .bottom-footer {
+  @apply w-full flex items-center justify-between mt-[8em] pl-4 xl:pl-0;
+}
+
+.footer .bottom-footer .copyrights {
+  @apply text-[#787878] text-sm;
+}
+
+.footer .socials {
+  @apply flex items-center gap-2 mr-[2em];
+}
+
+.footer .socials p {
+  @apply hover:bg-[#376d9f] p-3 text-white cursor-pointer transition-all ease-in-out duration-300;
+
+  background: rgba(254, 254, 254, 0.1);
+  border-radius: 50%;
+}

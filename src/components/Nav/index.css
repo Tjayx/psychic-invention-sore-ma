@@ -1,0 +1,115 @@
+@reference "tailwindcss";
+
+.nav {
+  @apply h-[100px] hidden w-full absolute z-[999999] items-center justify-between top-[5%] px-[2em] xl:flex;
+}
+
+.left-nav {
+  @apply flex items-center gap-[7em];
+}
+
+.nav-items {
+  @apply flex items-center gap-5;
+}
+
+.nav .nav-item {
+  position: relative;
+  z-index: 999999;
+  font-size: large;
+  font-weight: 500;
+}
+
+.nav .nav-item::after {
+  content: "";
+  height: 2px;
+  background: #4282bd;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  opacity: 0;
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transform: scaleX(0);
+}
+
+.nav .nav-item:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.nav img {
+  @apply w-[200px];
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -50%; /* Start off-screen */
+  width: 70%; /* Take up half the screen */
+  height: 100%;
+  background: #1f2d3d;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+  transition: left 0.5s ease;
+}
+
+.side-menu.open {
+  left: 0; /* Slide in */
+}
+
+.side-bar-items {
+  @apply flex flex-col gap-4 w-[80%] text-start text-xl font-bold m-4;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: -3em;
+  z-index: 9999999;
+  border-radius: 50%;
+  background: white;
+}
+
+.mobile-nav {
+  @apply flex xl:hidden w-full items-center justify-between fixed bg-white py-4 z-[999999] px-5;
+}
+
+.mobile-nav img {
+  @apply w-[150px];
+}
+
+.mobile-nav div {
+  @apply flex items-center gap-4 text-black;
+}
+
+.hidden-nav {
+  @apply fixed top-0 left-0 w-full z-[999999] bg-white shadow-md transition-all duration-300 h-[80px] hidden xl:flex items-center justify-between px-[2em];
+}
+
+.hidden-nav img {
+  @apply w-[200px];
+}

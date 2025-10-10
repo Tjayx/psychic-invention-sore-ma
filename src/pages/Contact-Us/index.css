@@ -1,0 +1,73 @@
+@reference "tailwindcss";
+
+.contact-us-page {
+  @apply w-screen;
+}
+
+.contact-us-page .contacts-us-components {
+  @apply w-full md:w-full xl:w-[75%] mx-auto flex flex-col lg:flex-row pl-3 xl:pl-0 items-center my-[7em] gap-[7em];
+}
+
+.contacts-us-components h4 {
+  @apply text-[#4282bd];
+}
+
+.contacts-us-components h2 {
+  @apply text-[#1F2D3D] text-5xl font-bold mb-[1.5em] mt-[0.6em];
+}
+
+.contacts-us-components .address {
+  @apply w-[250px] mb-[5em];
+}
+
+.contacts-us-components h3 {
+  @apply text-[#1F2D3D] font-bold text-2xl mb-[1em];
+}
+
+.address p {
+  @apply text-[#777777];
+}
+
+.contacts-us-components .contact-infos {
+  @apply flex items-start gap-[2em];
+}
+
+.contact-infos p {
+  @apply text-[#4282bd];
+}
+
+.contacts-us-components .follow-us {
+  @apply flex flex-col mt-[3em];
+}
+
+.follow-us .socials {
+  @apply flex items-center gap-2;
+}
+
+.form {
+  @apply ml-[-10px] lg:ml-0 lg:mr-4 xl:mr-0;
+}
+
+.form h5 {
+  @apply text-[#777777] font-semibold;
+}
+
+.form .field {
+  @apply flex flex-col items-start;
+}
+
+.form .input-field {
+  @apply border border-[#E7E7E7] rounded-md w-[330px] md:w-[500px];
+}
+
+.form input {
+  @apply h-[40px];
+}
+
+.form label {
+  @apply text-[#1F2D3D] mb-2 mt-3;
+}
+
+.form button {
+  @apply w-[330px] md:w-[500px] bg-[#4282bd] text-center text-white py-3 text-sm mt-8 rounded-sm;
+}

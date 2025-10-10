@@ -1,0 +1,26 @@
+@reference "tailwindcss";
+
+.landing-page-our-services {
+  @apply w-[78%] mx-auto flex flex-col items-center pt-5 pb-[4em];
+}
+
+.landing-page-our-services h4 {
+  @apply text-[#6fa0cd];
+}
+
+.landing-page-our-services h2 {
+  @apply my-[1.5em] text-3xl font-bold;
+}
+
+.landing-page-our-services .our-services-1,
+.our-services-2 {
+  @apply flex gap-9 flex-col md:flex-row xl:gap-5 xl:flex-row;
+}
+
+.landing-page-our-services .our-services-2 {
+  @apply mt-[3em];
+}
+
+.landing-page-our-services button {
+  @apply mt-[4em];
+}

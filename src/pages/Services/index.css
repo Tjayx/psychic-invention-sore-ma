@@ -1,0 +1,26 @@
+@reference "tailwindcss";
+
+.services {
+  @apply w-screen;
+}
+
+.what-we-do {
+  @apply w-[75%] mx-auto py-[6em];
+}
+
+.what-we-do h2 {
+  @apply text-[#1F2D3D] text-3xl font-bold mb-[2em];
+}
+
+.what-we-do .we-offer {
+  @apply text-[#787878] xl:w-[600px] font-semibold;
+}
+
+.services .our-services-1,
+.our-services-2 {
+  @apply flex flex-col md:flex-row gap-5 mt-[4em];
+}
+
+.services .our-services-2 {
+  @apply mt-[3em];
+}

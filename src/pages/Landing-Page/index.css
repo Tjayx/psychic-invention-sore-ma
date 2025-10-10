@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.landing-page {
+  @apply w-full;
+}
+
+.landing-page .our-clients {
+  @apply w-screen flex flex-col items-center justify-center py-[5em];
+}
+
+.landing-page .our-clients h4 {
+  @apply text-[#6fa0cd];
+}
+
+.landing-page .our-clients h2 {
+  @apply my-[1.5em] text-3xl font-bold;
+}
+
+.landing-page .our-clients div {
+  @apply grid grid-cols-2 md:flex xl:flex xl:items-center gap-[3em] xl:gap-[10em] my-[1em];
+}
+
+.our-clients img {
+  @apply w-[100px] xl:w-auto;
+}

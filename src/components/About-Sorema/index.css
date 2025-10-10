@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.about-sorema {
+  @apply w-screen flex items-center py-[2em];
+}
+
+.about-sorema .img-div {
+  @apply w-1/2 hidden md:block md:p-[2em] xl:p-0;
+}
+
+.about-sorema img {
+  @apply h-[250px] mx-auto object-contain;
+}
+
+.about-sorema .about-company {
+  @apply w-full flex flex-col items-start gap-[3em] ml-3 md:w-1/2 md:ml-0;
+}
+
+.about-company h5 {
+  @apply text-[#6fa0cd] mb-[-1em];
+}
+
+.about-company h2 {
+  @apply text-[#1F2D3D] text-4xl font-bold mb-[1.5em];
+}
+
+.about-company p {
+  @apply text-[#777777] w-full md:w-[350px] lg:w-[450px] xl:w-[600px];
+}
+
+.about-company h4 {
+  @apply text-[#1F2D3D] font-bold mb-4;
+}
