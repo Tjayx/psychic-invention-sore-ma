@@ -1,10 +1,18 @@
 import "./index.css";
-import refinery1 from "../../assets/refinery-1.jpg";
-import refinery2 from "../../assets/refinery-2.jpg";
+import refinery2 from "../../assets/industry_one.png";
+import refinery1 from "../../assets/industry_two.png";
 import Button from "../Button";
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const index = () => {
+
+  const navigate = useNavigate();
+
+  const handleViewMoreClick = () => {
+    navigate("/about-us");
+  };
+
   return (
     <div className="landing-about-us">
       <motion.div
@@ -25,9 +33,7 @@ const index = () => {
         </p>
         <Button
           content={"View more"}
-          onClick={function (): void {
-            throw new Error("Function not implemented.");
-          }}
+          onClick={handleViewMoreClick}
         />
       </motion.div>
       <motion.div

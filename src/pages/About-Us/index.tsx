@@ -3,53 +3,56 @@ import AboutSorema from "../../components/About-Sorema";
 import AboutUsHero from "../../components/About-Us-Hero";
 import "./index.css";
 
-const index = () => {
+// Import management team photos
+import efosaImg from "../../assets/efosa-ogbeide.jpg";
+import cooImg from "../../assets/coo-guy.jpg";
+import ewemadeImg from "../../assets/ewemade-ogbeide.jpg";
+
+const Index = () => {
   const coreValues = [
     {
-      title: "Ambition",
+      title: "Partnership",
       content:
-        "We are driven by our vision of the future, how things could be. It inspires us, motivates us and keeps us focused on what really counts, working together to transform goals into reality.",
-    },
-    {
-      title: "Respect",
-      content:
-        "We are committed to treating employees, customers and other stakeholders with respect and courtesy in a way that creats a pleasant work environment for everyone.",
+        "building strong local and global collaborations.",
     },
     {
       title: "Integrity",
       content:
-        "Honesty, trust and integrity are at the heart of everything we say and do. We keep our promises.",
+        "doing business with trust and transparency.",
     },
     {
       title: "Innovation",
       content:
-        "Creating new ideas and probatively delivering our services. Services, we are dependable and we always strive towards exceptional service delivery.",
+        "staying ahead with bold, forward-thinking solutions.",
     },
     {
       title: "Excellence",
       content:
-        "The ability to consistently meet, manage and exceed stakeholders’ expectation.",
+        "setting the highest standard in every venture we undertake.",
     },
   ];
 
   const managementTeam = [
     {
-      jobTitle: "Managing Director/CEO",
-      name: "Richardson Arigbodi",
+      jobTitle: "Founder/CEO",
+      name: "Dr. Efosa Ogbeide",
       experience:
-        "Richardson is currently the managing director and chief executive officer of Nemera oil and gas limited. He is responsible for the company business and strategy. He has over 23 years working experience with the finest financial institutions in Nigeria and holds a bachelors degree in econmics from the University of Benin.",
-    },
-    {
-      jobTitle: "DMD/COO",
-      name: "Ikponmwosa Oronsaye",
-      experience:
-        "Ikponwosa is the deputy managing director and executive director of operations at Nemera oil and gas limited. He oversees the implementation of the company’s business strategy, planning, finance and administration. He holds a BSc in Economics and Statistics from the University of Benin and an MBA with a supply chain management concentration from the University of Rhode Island.",
+        "Dr. Efosa Israel-Agbonkonkon Ogbeide is an entrepreneur and global business leader with nearly two decades of experience in FMCG, brand development, marketing, distribution, hospitality, EPC, electronics, and renewable energy. Widely recognized as an Innovation Champion, Efosa is respected for his ability to launch and scale global brands across Africa, develop consumer-centric strategies, and position African enterprises on the global stage.",
+      image: efosaImg,
     },
     {
       jobTitle: "Director",
-      name: "Tejumola Arigbodi",
+      name: "Ewemade Ogbeide",
       experience:
-        "Tejumola brings to bear over a decade experience in entrepreneurial engagements and high level trainings. Tejumola holds a bachelors degree in English language from the University of Lagos and has attended several international trainings relevant to the company’s business to sharpen her entrepreneurial skills.",
+        "Ewemade brings to bear over a decade of experience in entrepreneurial engagements and high-level trainings. She holds a bachelor's degree in English Language from the University of Lagos and has attended several international trainings relevant to the company’s business to sharpen her entrepreneurial skills.",
+      image: ewemadeImg,
+    },
+    {
+      jobTitle: "COO",
+      name: "Saikat Ganguly",
+      experience:
+        "Saikat Ganguly is a results-driven professional with over two decades of diverse experience across FMCG, automotive, IT, and education sectors. Skilled in business strategy, P&L management, sales and marketing leadership, brand management, operations, and channel development, he has successfully led business growth and transformation across multiple organizations.",
+      image: cooImg,
     },
   ];
 
@@ -58,7 +61,7 @@ const index = () => {
       <AboutUsHero />
       <AboutSorema />
 
-      {/* Core values */}
+      {/* Core Values */}
       <motion.div
         className="core-values"
         animate={{ y: [100, 0], opacity: [0, 1] }}
@@ -67,7 +70,7 @@ const index = () => {
       >
         <h2>Our Core Values</h2>
         <div className="values">
-          {coreValues.map(({ content, title }, index) => (
+          {coreValues.map(({ title, content }, index) => (
             <motion.div
               key={index}
               animate={{ y: [100, 0], opacity: [0, 1] }}
@@ -85,7 +88,7 @@ const index = () => {
         </div>
       </motion.div>
 
-      {/* Management team */}
+      {/* Management Team */}
       <motion.div
         className="management-team"
         animate={{ y: [100, 0], opacity: [0, 1] }}
@@ -94,7 +97,7 @@ const index = () => {
       >
         <h2>Our Management Team</h2>
         <div className="team">
-          {managementTeam.map(({ experience, jobTitle, name }, index) => (
+          {managementTeam.map(({ jobTitle, name, experience, image }, index) => (
             <motion.div
               key={index}
               className="member"
@@ -106,10 +109,14 @@ const index = () => {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <h4>{jobTitle}</h4>
-              <h3>{name}</h3>
-              <p>{experience}</p>
-              <span></span>
+              <div className="member-image">
+                <img src={image} alt={name} />
+              </div>
+              <div className="member-info">
+                <h4>{jobTitle}</h4>
+                <h3>{name}</h3>
+                <p>{experience}</p>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -118,4 +125,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

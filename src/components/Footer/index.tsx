@@ -8,18 +8,16 @@ const index = () => {
   const socialIcons = [<FaFacebookF />, <FaTwitter />, <FaInstagram />];
 
   const ourServices = [
-    { title: "Haulage", link: "" },
-    { title: "Equipment/Material Supply", link: "" },
-    { title: "Technical Consultancy", link: "" },
-    { title: "Rehabilitation/ Upgrade/ Fabrication Works", link: "" },
-    { title: "Installation And Maintenance", link: "" },
+    { title: "Haulage", link: "/our-services" },
+    { title: "Equipment/Material Supply", link: "/our-services" },
+    { title: "Technical Consultancy", link: "/our-services" },
+    { title: "Rehabilitation/ Upgrade/ Fabrication Works", link: "/our-services" },
+    { title: "Installation And Maintenance", link: "/our-services" },
   ];
 
   const quickLinks = [
-    { title: "About Sorema", link: "" },
-    { title: "Career", link: "" },
-    { title: "Contact Us", link: "" },
-    { title: "Publications", link: "" },
+    { title: "About Sorema", link: "/about-us" },
+    { title: "Contact Us", link: "/contact-us" },
   ];
 
   return (
@@ -27,7 +25,7 @@ const index = () => {
       <div className="footer-items">
         <div className="mt-3">
           <img src={logo} alt="" />
-          <p className="statement">Leading Nigeria in energy exploration.</p>
+          <p className="statement">Providing innovative, high-quality and reliable solutions.</p>
         </div>
 
         <div className="item">
@@ -64,7 +62,7 @@ const index = () => {
 
       <div className="bottom-footer">
         <p className="copyrights">
-          All rights reserved. © {new Date().getFullYear()} Nemera Oil and Gas
+          All rights reserved. © {new Date().getFullYear()} Sorema Group
           Limited.
         </p>
 

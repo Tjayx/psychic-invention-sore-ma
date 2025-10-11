@@ -2,14 +2,14 @@ import "./index.css";
 import Hero from "../../components/Hero";
 import AboutUs from "../../components/About-Us";
 import OurServices from "../../components/Our-Services";
-import nnpcImage from "../../assets/nnpc.png";
-import seplatImage from "../../assets/seplat.webp";
-import shellImage from "../../assets/shell.png";
-import lngImage from "../../assets/nigeria-lng.jpg";
+import vaibImage from "../../assets/vaib_company.png";
+//import shellImage from "../../assets/shell.png";
+//import lngImage from "../../assets/nigeria-lng.jpg";
+import btechImage from "../../assets/btech_company.png";
 import { motion } from "motion/react";
 
 const index = () => {
-  const clientsImages = [nnpcImage, seplatImage, shellImage, lngImage];
+  const clientsImages = [btechImage, vaibImage];
 
   return (
     <div className="landing-page">
@@ -19,8 +19,8 @@ const index = () => {
 
       {/* Our clients */}
       <motion.div className="our-clients">
-        <h4>Our Clients</h4>
-        <h2>Some of our Clients</h2>
+        <h4>Our Partners</h4>
+        <h2>Some of our Partners</h2>
         <div>
           {clientsImages.map((image, index) => (
             <motion.img

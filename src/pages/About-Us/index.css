@@ -51,3 +51,28 @@
 .member span {
   @apply bg-[#4282bd] w-[100px] h-[2px] mt-[2em];
 }
+
+.management-team .team {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.management-team .member {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.member-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+

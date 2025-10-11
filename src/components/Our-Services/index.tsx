@@ -3,16 +3,24 @@ import "./index.css";
 import haulageImage from "../../assets/haulage.jpg";
 import supplyImage from "../../assets/supply.jpg";
 import consultancy from "../../assets/consultancy.jpg";
-import fabricationImage from "../../assets/fabrication.webp";
-import installationImage from "../../assets/installation.webp";
+//import fabricationImage from "../../assets/fabrication.webp";
+//import installationImage from "../../assets/installation.webp";
 import Button from "../Button";
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const index = () => {
+
+  const navigate = useNavigate();
+
+  const handleViewAllServicesClick = () => {
+    navigate("/our-services");
+  };
+
   const ourServices: ServiceCardProps[] = [
     {
       content:
-        "We ensure the safe, efficient, and regulation-compliant transportation of refined petroleum products and gas using modern, high-standard haulage solutions.",
+        "We specialize in the safe and efficient transportation of refined petroleum products, ensuring timely delivery and compliance withindustry regulations.",
       image: haulageImage,
       title: "Haulage",
     },
@@ -28,7 +36,7 @@ const index = () => {
       image: consultancy,
       title: "Technical Consultancy",
     },
-    {
+    /*{
       content:
         " We specialize in minor civil and mechanical works, offering rehabilitation, upgrade, and fabrication services to enhance structural integrity and industrial efficiency.",
       image: fabricationImage,
@@ -39,7 +47,7 @@ const index = () => {
         "We deliver comprehensive civil installation and maintenance services, ensuring infrastructure sustainability and operational reliability",
       image: installationImage,
       title: "Installation And Maintenance",
-    },
+    },*/
   ];
 
   return (
@@ -86,9 +94,7 @@ const index = () => {
         </motion.div>
         <Button
           content={"View all services"}
-          onClick={function (): void {
-            throw new Error("Function not implemented.");
-          }}
+          onClick={handleViewAllServicesClick}
         />
       </motion.div>
     </div>

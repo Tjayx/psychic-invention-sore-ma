@@ -1,4 +1,4 @@
-import Button from "../Button";
+//import Button from "../Button";
 import trucksImage from "../../assets/trucks.png";
 import "./index.css";
 import { motion } from "motion/react";
@@ -26,17 +26,41 @@ const index = () => {
         <div>
           <h2>Sorema Limited</h2>
           <p>
-            Sorema is a forward-thinking company dedicated to delivering
-            top-tier solutions across multiple sectors. With a steadfast
-            commitment to excellence, innovation, and integrity, we ensure that
-            our clients receive industry-leading services tailored to their
-            specific needs. Our expertise spans a diverse range of fields,
-            making us a trusted partner in the industry.
+            Sorema Group, founded in 2016, is a diversified African conglomerate
+            with operations across Fast-Moving Consumer Goods (FMCG), marketing, 
+            sales and distribution, hospitality, EPC (Engineering, Procurement & 
+            Construction), electronics & gadgets, and renewable energy solutions.
+            <br />
+            Since inception, the Group has built a reputation for bridging local 
+            markets with global opportunities, successfully driving growth and 
+            partnerships across Africa, Europe, Asia, and the Middle East. 
+            Headquartered in Nigeria, Sorema is rapidly positioning itself as a 
+            global player in international trade, brand development, infrastructure, 
+            and sustainable solutions.
             <br />
             <br />
-            Our operations are designed to be environmentally friendly and
-            socially responsible, ensuring a sustainable future for generations
-            to come.
+            At its core, Sorema Group is driven by a mission:
+            To connect Africa to the world through innovation, 
+            partnerships, and excellence in service delivery.
+            <br />
+            <br />
+            Our Core Sectors
+            <br />
+            <br />
+            FMCG & Distribution: Building strong trade networks for global consumer 
+            brands across Africa.
+            <br />
+            Hospitality: Creating lifestyle and premium service experiences that 
+            redefine African hospitality.
+            <br />
+            EPC (Engineering, Procurement & Construction): Delivering infrastructure 
+            and industrial solutions that power growth.
+            <br />
+            Electronics & Gadgets: Expanding access to modern technology in emerging 
+            markets.
+            <br />
+            Solar & Renewable Energy: Driving Africa’s energy transition with 
+            sustainable, accessible power solutions.
           </p>
         </div>
 
@@ -57,12 +81,12 @@ const index = () => {
           </p>
         </div>
 
-        <Button
+        {/*<Button
           content={"See Company Brochure"}
           onClick={function (): void {
             throw new Error("Function not implemented.");
           }}
-        />
+        />*/}
       </motion.div>
     </div>
   );

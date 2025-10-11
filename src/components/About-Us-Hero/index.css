@@ -3,7 +3,7 @@
 .about-hero {
   @apply w-screen;
 
-  background-image: url("../../assets/engineer.png");
+  background-image: url("../../assets/about_us_image.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

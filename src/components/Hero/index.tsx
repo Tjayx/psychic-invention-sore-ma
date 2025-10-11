@@ -6,9 +6,9 @@ const index = () => {
     <div className="hero h-[600px]">
       <div className="hero-components">
         <h1>WE ARE SOREMA LIMITED.</h1>
-        <p>Leading Nigeria in energy exploration.</p>
+        <p>Providing innovative, high-quality and reliable solutions.</p>
         <div className="buttons">
-          <Link to={"/services"} className="services">
+          <Link to={"/our-services"} className="services">
             Our Services
           </Link>
           <Link to={"/about-us"} className="about-us">
