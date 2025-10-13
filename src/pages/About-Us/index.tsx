@@ -33,21 +33,21 @@ const Index = () => {
       jobTitle: "Founder/CEO",
       name: "Dr. Efosa Ogbeide",
       experience:
-        "Dr. Efosa Israel-Agbonkonkon Ogbeide is an entrepreneur and global business leader with nearly two decades of experience in FMCG, brand development, marketing, distribution, hospitality, EPC, electronics, and renewable energy. Widely recognized as an Innovation Champion, Efosa is respected for his ability to launch and scale global brands across Africa, develop consumer-centric strategies, and position African enterprises on the global stage.",
+        "Dr. Efosa Israel-Agbonkonkon Ogbeide is an entrepreneur and global business leader with nearly two decades of experience in FMCG, brand development, marketing, distribution, hospitality, EPC, electronics, and renewable energy. Efosa holds a Bachelor’s degree in Business Administration from Igbinedion University, Okada, and a Master’s in International Business & Hospitality Management from the Swiss Hotel Management School, Leysin, Switzerland. Widely recognized as an Innovation Champion, Efosa is respected for his ability to launch and scale global brands across Africa, develop consumer-centric strategies, and position African enterprises on the global stage.",
       image: efosaImg,
     },
     {
-      jobTitle: "Director",
-      name: "Ewemade Ogbeide",
+      jobTitle: "Executive Director, IT & Operations",
+      name: "Ewemade Agbonkonkon-Ogbeide",
       experience:
-        "Ewemade brings to bear over a decade of experience in entrepreneurial engagements and high-level trainings. She holds a bachelor's degree in English Language from the University of Lagos and has attended several international trainings relevant to the company’s business to sharpen her entrepreneurial skills.",
+        "Ewemade Ogbeide is a results  driven technology and operations executive with expertise in data analytics, process optimization, and strategic management. At Sorema Group, she leads initiatives that enhance innovation, efficiency, and sustainable business growth. She holds a Master’s in Computer Science, a Bachelor’s in Statistics with Computer Science, and a Data Analytics certification from Udacity, with a passion for using data and technology to drive informed decision-making and organizational excellence.",
       image: ewemadeImg,
     },
     {
-      jobTitle: "COO",
+      jobTitle: "Chief Operating Officer",
       name: "Saikat Ganguly",
       experience:
-        "Saikat Ganguly is a results-driven professional with over two decades of diverse experience across FMCG, automotive, IT, and education sectors. Skilled in business strategy, P&L management, sales and marketing leadership, brand management, operations, and channel development, he has successfully led business growth and transformation across multiple organizations.",
+        "Saikat Ganguly is a results-driven professional with over two decades of diverse experience across FMCG, automotive, IT, and education sectors. Skilled in business strategy, P&L management, sales and marketing leadership, brand management, operations, and channel development, he has successfully led business growth and transformation across multiple organizations. Saikat holds a B.Com degree from Calcutta University, along with a Diploma in Marketing & Sales Management and an iGNIIT certification from NIIT, Kolkata.",
       image: cooImg,
     },
   ];

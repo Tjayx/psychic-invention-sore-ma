@@ -37,7 +37,7 @@ const index = () => {
             </div>
             <div>
               <h3>Email address</h3>
-              <p></p>
+              <p>soremang@gmail.com</p>
             </div>
           </div>
           <div className="follow-us">
@@ -61,7 +61,7 @@ const index = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1.5, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
         >
-          <h5>Contact Me</h5>
+          <h5>Contact Us</h5>
           <form action="">
             <div className="field">
               <label htmlFor="">
