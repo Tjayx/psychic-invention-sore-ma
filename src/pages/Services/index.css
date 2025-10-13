@@ -24,3 +24,7 @@
 .services .our-services-2 {
   @apply mt-[3em];
 }
+
+.our-products {
+  @apply w-full flex flex-col items-center gap-[1em] mb-[8em] pb-2;
+}

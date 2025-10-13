@@ -9,6 +9,7 @@ import ServiceCard, {
   type ServiceCardProps,
 } from "../../components/Services-Card";
 import { motion } from "motion/react";
+import Slider from "../../components/Slider";
 
 const index = () => {
   const ourServices: ServiceCardProps[] = [
@@ -102,6 +103,11 @@ const index = () => {
           </motion.div>
         </div>
       </motion.div>
+      <div className="our-products">
+        <h3 className="text-[#6fa0cd] text-lg font-semibold">Our Services</h3>
+
+        <Slider />
+      </div>
     </div>
   );
 };

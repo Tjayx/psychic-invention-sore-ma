@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+
+.products {
+  @apply w-full flex overflow-hidden;
+
+  animation: scroll 40s linear infinite;
+}
+
+.products:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
