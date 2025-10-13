@@ -12,23 +12,19 @@ const Index = () => {
   const coreValues = [
     {
       title: "Partnership",
-      content:
-        "building strong local and global collaborations.",
+      content: "building strong local and global collaborations.",
     },
     {
       title: "Integrity",
-      content:
-        "doing business with trust and transparency.",
+      content: "doing business with trust and transparency.",
     },
     {
       title: "Innovation",
-      content:
-        "staying ahead with bold, forward-thinking solutions.",
+      content: "staying ahead with bold, forward-thinking solutions.",
     },
     {
       title: "Excellence",
-      content:
-        "setting the highest standard in every venture we undertake.",
+      content: "setting the highest standard in every venture we undertake.",
     },
   ];
 
@@ -97,28 +93,28 @@ const Index = () => {
       >
         <h2>Our Management Team</h2>
         <div className="team">
-          {managementTeam.map(({ jobTitle, name, experience, image }, index) => (
-            <motion.div
-              key={index}
-              className="member"
-              animate={{ y: [100, 0], opacity: [0, 1] }}
-              viewport={{ once: false, amount: 0.3 }}
-              transition={{
-                duration: 2,
-                delay: 0.8,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
-              <div className="member-image">
+          {managementTeam.map(
+            ({ jobTitle, name, experience, image }, index) => (
+              <motion.div
+                key={index}
+                className="member"
+                animate={{ y: [100, 0], opacity: [0, 1] }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{
+                  duration: 2,
+                  delay: 0.8,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+              >
                 <img src={image} alt={name} />
-              </div>
-              <div className="member-info">
-                <h4>{jobTitle}</h4>
-                <h3>{name}</h3>
-                <p>{experience}</p>
-              </div>
-            </motion.div>
-          ))}
+                <div className="member-info">
+                  <h4>{jobTitle}</h4>
+                  <h3>{name}</h3>
+                  <p>{experience}</p>
+                </div>
+              </motion.div>
+            )
+          )}
         </div>
       </motion.div>
     </div>

@@ -32,10 +32,6 @@
   @apply flex flex-col md:grid md:grid-cols-2 xl:flex-row items-center gap-[1em];
 }
 
-.team .member {
-  @apply flex flex-col items-center text-center;
-}
-
 .member h4 {
   @apply text-[#6fa0cd] mb-1;
 }
@@ -59,20 +55,15 @@
   margin-top: 2rem;
 }
 
-.management-team .member {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  background: #f9f9f9;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.team .member {
+  @apply flex gap-5 items-center bg-[#f9f9f9] rounded-2xl p-6;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.member-image img {
+.member img {
   width: 150px;
   height: 150px;
   border-radius: 12px;
   object-fit: cover;
 }
-
