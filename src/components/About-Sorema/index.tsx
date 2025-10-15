@@ -24,7 +24,7 @@ const index = () => {
         <h5>About Sorema</h5>
 
         <div>
-          <h2>Sorema Limited</h2>
+          <h2>Sorema Group</h2>
           <p>
             Sorema Group, founded in 2016, is a diversified African conglomerate
             with operations across Fast-Moving Consumer Goods (FMCG), marketing, 

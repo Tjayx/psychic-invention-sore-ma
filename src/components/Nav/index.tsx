@@ -1,7 +1,7 @@
 import "./index.css";
 import logo from "../../assets/sorema-logo.png";
 import { Link, useLocation } from "react-router-dom";
-import { IoSearch } from "react-icons/io5";
+//import { IoSearch } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -52,7 +52,7 @@ const index = () => {
             ))}
           </div>
         </div>
-        <IoSearch className="text-white" />
+        {/*<IoSearch className="text-white" />*/}
       </nav>
 
       {/* Hidden navbar */}
@@ -80,7 +80,7 @@ const index = () => {
             ))}
           </div>
         </div>
-        <IoSearch className="text-black" />
+        {/*<IoSearch className="text-black" />*/}
       </nav>
 
       {/* Menu Overlay */}
@@ -94,7 +94,7 @@ const index = () => {
         <img src={logo} alt="" />
         <div>
           <GiHamburgerMenu onClick={() => setShowSideBar(true)} />
-          <IoSearch className="text-black" />
+          {/*<IoSearch className="text-black" />*/}
         </div>
       </nav>
 

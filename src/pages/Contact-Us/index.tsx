@@ -22,7 +22,7 @@ const index = () => {
           transition={{ duration: 1.5, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
         >
           <h4>Let's Talk!</h4>
-          <h2>Contact Sorema Limited</h2>
+          <h2>Contact Sorema Group</h2>
           <div className="address">
             <h3>Office Address</h3>
             <p>

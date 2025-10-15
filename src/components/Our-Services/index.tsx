@@ -2,9 +2,9 @@ import ServiceCard, { type ServiceCardProps } from "../Services-Card";
 import "./index.css";
 import haulageImage from "../../assets/haulage.jpg";
 import supplyImage from "../../assets/supply.jpg";
-import consultancy from "../../assets/consultancy.jpg";
-//import fabricationImage from "../../assets/fabrication.webp";
-//import installationImage from "../../assets/installation.webp";
+import consultancy from "../../assets/easystayimg.png";
+import gadgetsImage from "../../assets/electronics_gadgets.png";
+import installationImage from "../../assets/landing-page-hero-bg-2.png";
 import Button from "../Button";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
@@ -20,34 +20,34 @@ const index = () => {
   const ourServices: ServiceCardProps[] = [
     {
       content:
-        "We specialize in the safe and efficient transportation of refined petroleum products, ensuring timely delivery and compliance withindustry regulations.",
+        "",
       image: haulageImage,
-      title: "Haulage",
+      title: "FMCG & Distribution",
     },
     {
       content:
-        "We supply high-quality industrial components, including valves, nozzles, expanders, flanges, seals, O-rings, bolts, and nuts, ensuring seamless operations and long-term performance.",
+        "",
       image: supplyImage,
-      title: "Equipment/Material Supply",
+      title: "Engineering, Procurement & Construction",
     },
     {
       content:
-        "Our expert engineering consultancy services provide technical guidance and innovative solutions to optimize operational efficiency and project execution.",
+        "",
       image: consultancy,
-      title: "Technical Consultancy",
-    },
-    /*{
-      content:
-        " We specialize in minor civil and mechanical works, offering rehabilitation, upgrade, and fabrication services to enhance structural integrity and industrial efficiency.",
-      image: fabricationImage,
-      title: "Rehabilitation/ Upgrade/ Fabrication Works",
+      title: "Hospitality",
     },
     {
       content:
-        "We deliver comprehensive civil installation and maintenance services, ensuring infrastructure sustainability and operational reliability",
+        "",
+      image: gadgetsImage,
+      title: "Electronics & Gadgets",
+    },
+    {
+      content:
+        "",
       image: installationImage,
-      title: "Installation And Maintenance",
-    },*/
+      title: "Solar & Renewable Energy",
+    },
   ];
 
   return (

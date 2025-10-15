@@ -8,11 +8,11 @@ const index = () => {
   const socialIcons = [<FaFacebookF />, <FaTwitter />, <FaInstagram />];
 
   const ourServices = [
-    { title: "Haulage", link: "/our-services" },
-    { title: "Equipment/Material Supply", link: "/our-services" },
-    { title: "Technical Consultancy", link: "/our-services" },
-    { title: "Rehabilitation/ Upgrade/ Fabrication Works", link: "/our-services" },
-    { title: "Installation And Maintenance", link: "/our-services" },
+    { title: "FMCG & Distribution", link: "/our-services" },
+    { title: "Engineering, Procurement & Construction", link: "/our-services" },
+    { title: "Hospitality", link: "/our-services" },
+    { title: "Electronics & Gadgets", link: "/our-services" },
+    { title: "Solar & Renewable Energy", link: "/our-services" },
   ];
 
   const quickLinks = [

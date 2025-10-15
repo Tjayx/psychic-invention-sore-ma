@@ -24,12 +24,20 @@ const index = () => {
         <h4 className="text-[#6fa0cd] text-lg">About Us</h4>
         <h2 className="who-we-are">Who We Are</h2>
         <p className="text-[#787878]">
-          Sorema is a forward-thinking company dedicated to delivering top-tier
-          solutions across multiple sectors. With a steadfast commitment to
-          excellence, innovation, and integrity, we ensure that our clients
-          receive industry-leading services tailored to their specific needs.
-          Our expertise spans a diverse range of fields, making us a trusted
-          partner in the industry.
+          Sorema Group, founded in 2016, is a diversified African conglomerate 
+          with interests in FMCG, hospitality, EPC, electronics & gadgets, and 
+          renewable energy. Headquartered in Nigeria, we connect local markets 
+          to global opportunities through innovation, partnerships, and operational 
+          excellence.
+          <br/>
+          Driven by a mission to link Africa to the world, Sorema has built a reputation 
+          for reliability, strategic growth, and sustainable impact across Africa & Europe. 
+          With progressive footprint in Asia and middle east. 
+          <br/>
+          <br/>
+          Our vision is to be a globally recognized African brand, shaping industries, 
+          empowering communities, and delivering world class solutions that inspire 
+          progress through strategic partnerships.
         </p>
         <Button
           content={"View more"}
