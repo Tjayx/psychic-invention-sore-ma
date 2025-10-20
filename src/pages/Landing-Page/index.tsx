@@ -7,10 +7,11 @@ import vaibImage from "../../assets/vaib_company.png";
 //import lngImage from "../../assets/nigeria-lng.jpg";
 import btechImage from "../../assets/btech_company.png";
 import fAndfImage from "../../assets/fandf_wines.png";
+import diageoLogo from "../../assets/diageoLogo.png"
 import { motion } from "motion/react";
 
 const index = () => {
-  const clientsImages = [btechImage, vaibImage, fAndfImage];
+  const clientsImages = [btechImage, vaibImage, fAndfImage, diageoLogo];
 
   return (
     <div className="landing-page">
