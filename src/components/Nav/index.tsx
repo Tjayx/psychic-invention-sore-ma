@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 //import { IoSearch } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { MdHomeRepairService } from "react-icons/md";
@@ -93,7 +93,7 @@ const index = () => {
       <nav className="mobile-nav">
         <img src={logo} alt="" />
         <div>
-          <GiHamburgerMenu onClick={() => setShowSideBar(true)} />
+          <RxHamburgerMenu onClick={() => setShowSideBar(true)} className="text-[28px] cursor-pointer" />
           {/*<IoSearch className="text-black" />*/}
         </div>
       </nav>

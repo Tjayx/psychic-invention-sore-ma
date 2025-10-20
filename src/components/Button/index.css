@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 .global-btn {
-  @apply bg-[#6fa0cd] px-5 pb-4 pt-3 text-center rounded-full hover:bg-[#376d9f] transition-all ease-in-out duration-300 cursor-pointer text-white w-fit;
+  @apply bg-[#6fa0cd] px-5 pb-4 pt-3 text-center hover:bg-[#376d9f] transition-all ease-in-out duration-300 cursor-pointer text-white w-fit;
 }

@@ -4,8 +4,34 @@
   @apply flex flex-col items-center w-[350px] md:w-[200px] xl:w-[350px] text-center;
 }
 
-.service-card img {
-  @apply h-[150px] w-full object-cover md:object-contain xl:object-cover;
+.service-card-image-container {
+  @apply relative w-full h-[150px] overflow-hidden cursor-pointer;
+}
+
+.service-card-image-container img {
+  @apply h-full w-full object-cover md:object-contain xl:object-cover transition-transform duration-300;
+}
+
+.service-card-image-container:hover img {
+  @apply scale-105;
+}
+
+/* Hover overlay styles */
+.service-card-overlay {
+  @apply absolute inset-0 bg-black/70 flex flex-col items-center justify-center gap-4 px-6 opacity-0 transition-opacity duration-300;
+  z-index: 10; /* 👈 ensures overlay appears above image */
+}
+
+.service-card-overlay.active {
+  @apply opacity-100;
+}
+
+.service-card-overlay-content {
+  @apply text-white text-sm leading-relaxed line-clamp-2 z-20; /* 👈 ensure visible text */
+}
+
+.service-card-view-more {
+  @apply bg-[#6fa0cd] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#5a8ab5] transition-colors duration-200;
 }
 
 .service-card h3 {

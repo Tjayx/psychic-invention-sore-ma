@@ -33,11 +33,11 @@ const index = () => {
           <div className="contact-infos">
             <div>
               <h3>Telephone number</h3>
-              <p>+234 816 441 8810</p>
+              <p>+234 706 874 9844</p>
             </div>
             <div>
               <h3>Email address</h3>
-              <p>soremang@gmail.com</p>
+              <p>info@soremagroup.com</p>
             </div>
           </div>
           <div className="follow-us">

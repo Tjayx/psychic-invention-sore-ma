@@ -50,7 +50,7 @@
 }
 
 .hero-components p {
-  @apply text-lg font-medium;
+  @apply text-base;
 }
 
 .hero-components .buttons {
@@ -58,11 +58,11 @@
 }
 
 .hero-components .services {
-  @apply bg-[#6fa0cd] w-[150px] pb-4 pt-3 text-center rounded-full hover:bg-[#376d9f] transition-all ease-in-out duration-300;
+  @apply bg-[#6fa0cd] w-[150px] pb-4 pt-3 text-center hover:bg-[#376d9f] transition-all ease-in-out duration-300;
 }
 
 .hero-components .about-us {
-  @apply bg-[#1d3953] w-[150px] pb-4 pt-3 text-center rounded-full hover:bg-[#0d1a26] transition-all ease-in-out duration-300;
+  @apply bg-[#1d3953] w-[150px] pb-4 pt-3 text-center hover:bg-[#0d1a26] transition-all ease-in-out duration-300 hidden md:inline-block;
 }
 
 /* Image Indicators */
@@ -77,13 +77,13 @@
 }
 
 .indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 0%;
   background: rgba(255, 255, 255, 0.5);
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 .indicator:hover {

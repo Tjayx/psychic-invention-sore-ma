@@ -1,3 +1,4 @@
+//Services.tsx
 import "./index.css";
 import ServicesHero from "../../components/Services-Hero";
 import haulageImage from "../../assets/haulage.jpg";
@@ -14,32 +15,32 @@ import Slider from "../../components/Slider";
 const index = () => {
   const ourServices: ServiceCardProps[] = [
     {
-      content:
+      description:
         "We build robust trade and distribution networks that bring global consumer brands closer to African markets. Through efficient logistics, strategic partnerships, and a deep understanding of local demand, we ensure products reach consumers swiftly and reliably across the continent.",
       image: haulageImage,
       title: "FMCG & Distribution",
     },
     {
-      content:
+      description:
         "Our EPC division provides comprehensive infrastructure and industrial solutions that drive sustainable growth. By combining engineering expertise with cutting-edge technology, Sorema delivers high-quality, cost-effective projects that meet global standards and fuel economic development.",
       image: supplyImage,
       title: "Engineering, Procurement & Construction",
     },
     {
-      content:
-        "We are redefining African hospitality by creating exceptional lifestyle and premium service experiences. From luxury accommodations to innovative dining and leisure concepts, EasyStay Africa is dedicated to delivering comfort, elegance, and world-class service that reflect Africa’s warmth and diversity.",
+      description:
+        "We are redefining African hospitality by creating exceptional lifestyle and premium service experiences. From luxury accommodations to innovative dining and leisure concepts, EasyStay Africa is dedicated to delivering comfort, elegance, and world-class service that reflect Africa's warmth and diversity.",
       image: consultancy,
       title: "Hospitality",
     },
     {
-      content:
+      description:
         "Sorema Nig. Ltd is focused on bridging the technology gap by making modern gadgets and devices more accessible in emerging markets. We partner with leading global manufacturers to supply reliable, affordable, and innovative electronic products that enhance everyday life and productivity.",
       image: gadgetsImage,
       title: "Electronics & Gadgets",
     },
     {
-      content:
-        "Committed to powering Africa’s future, Sorema Renewable Energy delivers clean and sustainable energy solutions. Our projects focus on expanding access to affordable solar power, reducing carbon footprints, and supporting the continent’s transition toward a greener, energy-secure future.",
+      description:
+        "Committed to powering Africa's future, Sorema Renewable Energy delivers clean and sustainable energy solutions. Our projects focus on expanding access to affordable solar power, reducing carbon footprints, and supporting the continent's transition toward a greener, energy-secure future.",
       image: installationImage,
       title: "Solar & Renewable Energy",
     },
@@ -61,7 +62,7 @@ const index = () => {
           installation (EPCI), distribution and hospitality services.
         </p>
 
-        <div className="flex flex-col items-center">
+        <section id="what-we-do" className="flex flex-col items-center">
           <motion.div
             className="our-services-1"
             animate={{ y: [100, 0], opacity: [0, 1] }}
@@ -72,11 +73,11 @@ const index = () => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            {ourServices.slice(0, 3).map(({ content, image, title }, index) => (
+            {ourServices.slice(0, 3).map(({ description, image, title }, index) => (
               <ServiceCard
                 image={image}
                 title={title}
-                content={content}
+                description={description}
                 key={index}
               />
             ))}
@@ -92,19 +93,19 @@ const index = () => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            {ourServices.slice(3, 5).map(({ content, image, title }, index) => (
+            {ourServices.slice(3, 5).map(({ description, image, title }, index) => (
               <ServiceCard
                 image={image}
                 title={title}
-                content={content}
+                description={description}
                 key={index}
               />
             ))}
           </motion.div>
-        </div>
+        </section>
       </motion.div>
       <div className="our-products">
-        <h3 className="text-[#6fa0cd] text-lg font-semibold">Our Services</h3>
+        <h3 className="text-[#6fa0cd] text-lg font-semibold">Our Products</h3>
 
         <Slider />
       </div>

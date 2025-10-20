@@ -1,8 +1,24 @@
 @reference "tailwindcss";
 
+.slider-container {
+  @apply w-full;
+}
+
+.category-toggle-bar {
+  @apply flex justify-center gap-4 mb-8 pb-4;
+}
+
+.category-tab {
+  @apply px-6 py-2 rounded-full font-semibold text-sm transition-all duration-300 cursor-pointer;
+  @apply bg-gray-100 text-gray-600 hover:bg-gray-200;
+}
+
+.category-tab.active {
+  @apply bg-[#4282bd] text-white shadow-lg;
+}
+
 .products {
   @apply w-full flex overflow-hidden;
-
   animation: scroll 40s linear infinite;
 }
 

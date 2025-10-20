@@ -26,17 +26,19 @@ const index = () => {
         <div>
           <h2>Sorema Group</h2>
           <p>
-            Sorema Group, founded in 2016, is a diversified African conglomerate
-            with operations across Fast-Moving Consumer Goods (FMCG), marketing, 
-            sales and distribution, hospitality, EPC (Engineering, Procurement & 
-            Construction), electronics & gadgets, and renewable energy solutions.
+            Sorema Group, founded in 2016, is a diversified African conglomerate 
+            with business interests spanning Fast-Moving Consumer Goods (FMCG), 
+            hospitality, engineering, procurement & construction (EPC), electronics 
+            & gadgets, and renewable energy solutions.
             <br />
-            Since inception, the Group has built a reputation for bridging local 
-            markets with global opportunities, successfully driving growth and 
-            partnerships across Africa, Europe, Asia, and the Middle East. 
-            Headquartered in Nigeria, Sorema is rapidly positioning itself as a 
-            global player in international trade, brand development, infrastructure, 
-            and sustainable solutions.
+            The Group’s origins trace back to Sorema Nigeria Limited, its pioneering subsidiary
+            and foundation entity, which continues to serve as the Group’s core operational 
+            and technical arm, driving major EPC and infrastructure projects across Africa.
+            Headquartered in Nigeria, Sorema connects local markets to global opportunities 
+            through innovation, strategic partnerships, and operational excellence. 
+            Over the years, the Group has built a solid reputation for reliability, growth, 
+            and sustainable impact across Africa and Europe, with a growing footprint in Asia 
+            and the Middle East.
             <br />
             <br />
             At its core, Sorema Group is driven by a mission:
@@ -67,9 +69,9 @@ const index = () => {
         <div>
           <h4>Our Vision</h4>
           <p>
-            To be a leading industry player recognized for excellence,
-            innovation, and a commitment to sustainability, setting the
-            benchmark for quality and service delivery
+            To be a globally recognized African brand, shaping industries, empowering 
+            communities, and delivering world-class solutions that inspire progress 
+            through collaboration and sustainable enterprise.
           </p>
         </div>
         <div>

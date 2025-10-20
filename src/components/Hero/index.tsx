@@ -37,8 +37,12 @@ const Index = () => {
 
       {/* Hero Content */}
       <div className="hero-components">
-        <h1>WE ARE SOREMA GROUP LTD.</h1>
-        <p>Redefining African Excellence Across FMCG, Energy, and Infrastructure.</p>
+        <h1>
+          WE ARE,
+          <br/>
+          SOREMA GROUP LTD.
+        </h1>
+        <p>Driving global business through innovation and partnerships-with integrity and excellence.</p>
         <div className="buttons">
           <Link to="/our-services" className="services">
             Our Services

@@ -1,6 +1,9 @@
-import ServiceCard, { type ServiceCardProps } from "../Services-Card";
+//Our-Services.tsx
+import ServiceCard, {
+  type ServiceCardProps,
+} from "../../components/Services-Card";
 import "./index.css";
-import haulageImage from "../../assets/haulage.jpg";
+import haulageImage from "../../assets/haulage.png";
 import supplyImage from "../../assets/supply.jpg";
 import consultancy from "../../assets/easystayimg.png";
 import gadgetsImage from "../../assets/electronics_gadgets.png";
@@ -19,32 +22,27 @@ const index = () => {
 
   const ourServices: ServiceCardProps[] = [
     {
-      content:
-        "",
+      content: "Building robust trade networks bringing global brands closer to African markets.",
       image: haulageImage,
-      title: "FMCG & Distribution",
+      title: "FMCG sales & Distribution",
     },
     {
-      content:
-        "",
+      content: "Comprehensive infrastructure solutions that drive sustainable growth.",
       image: supplyImage,
       title: "Engineering, Procurement & Construction",
     },
     {
-      content:
-        "",
+      content: "Creating exceptional lifestyle and premium hospitality experiences.",
       image: consultancy,
       title: "Hospitality",
     },
     {
-      content:
-        "",
+      content: "Making modern technology accessible in emerging markets.",
       image: gadgetsImage,
       title: "Electronics & Gadgets",
     },
     {
-      content:
-        "",
+      content: "Delivering clean and sustainable energy solutions for Africa's future.",
       image: installationImage,
       title: "Solar & Renewable Energy",
     },
