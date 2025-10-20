@@ -18,7 +18,7 @@ const index = () => {
       description:
         "We build robust trade and distribution networks that bring global consumer brands closer to African markets. Through efficient logistics, strategic partnerships, and a deep understanding of local demand, we ensure products reach consumers swiftly and reliably across the continent.",
       image: haulageImage,
-      title: "FMCG & Distribution",
+      title: "FMCG Sales & Distribution",
     },
     {
       description:

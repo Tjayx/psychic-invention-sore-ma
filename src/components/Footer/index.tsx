@@ -8,7 +8,7 @@ const index = () => {
   const socialIcons = [<FaFacebookF />, <FaTwitter />, <FaInstagram />];
 
   const ourServices = [
-    { title: "FMCG & Distribution", link: "/our-services#what-we-do" },
+    { title: "FMCG Sales & Distribution", link: "/our-services#what-we-do" },
     { title: "Engineering, Procurement & Construction", link: "/our-services#what-we-do" },
     { title: "Hospitality", link: "/our-services#what-we-do" },
     { title: "Electronics & Gadgets", link: "/our-services#what-we-do" },
