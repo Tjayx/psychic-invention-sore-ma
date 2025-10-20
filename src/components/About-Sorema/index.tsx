@@ -26,19 +26,18 @@ const index = () => {
         <div>
           <h2>Sorema Group</h2>
           <p>
-            Sorema Group, founded in 2016, is a diversified African conglomerate 
-            with business interests spanning Fast-Moving Consumer Goods (FMCG), 
-            hospitality, engineering, procurement & construction (EPC), electronics 
-            & gadgets, and renewable energy solutions.
+            Sorema Group, founded in 2016, is a diversified conglomerate with business interests
+            spanning Fast-Moving Consumer Goods (FMCG), Hospitality, Engineering, Procurement &
+            Construction (EPC), Electronics & Smart Technology, and Renewable Energy Solutions.
             <br />
-            The Group’s origins trace back to Sorema Nigeria Limited, its pioneering subsidiary
-            and foundation entity, which continues to serve as the Group’s core operational 
-            and technical arm, driving major EPC and infrastructure projects across Africa.
-            Headquartered in Nigeria, Sorema connects local markets to global opportunities 
-            through innovation, strategic partnerships, and operational excellence. 
-            Over the years, the Group has built a solid reputation for reliability, growth, 
-            and sustainable impact across Africa and Europe, with a growing footprint in Asia 
-            and the Middle East.
+            The Group’s origins trace back to Sorema Nigeria Limited, its pioneering subsidiary and 
+            foundational entity , which continues to lead major EPC, infrastructure, and FMCG projects 
+            across regions.
+            Headquartered in Nigeria, Sorema connects local markets with global opportunities through 
+            innovation, strategic partnerships, and operational excellence.
+            Over the years, the Group has built a solid reputation for reliability, sustainable growth, 
+            and impactful enterprise across Africa and Europe, with a growing footprint in Asia and the 
+            Middle East.
             <br />
             <br />
             At its core, Sorema Group is driven by a mission:
@@ -46,10 +45,9 @@ const index = () => {
             partnerships, and excellence in service delivery.
             <br />
             <br />
-            Our Core Sectors
-            <br />
-            <br />
-            FMCG & Distribution: Building strong trade networks for global consumer 
+            <h4>Our Core Sectors</h4>
+            
+            FMCG Sales & Distribution: Building strong trade networks for global consumer 
             brands across Africa.
             <br />
             Hospitality: Creating lifestyle and premium service experiences that 
@@ -69,9 +67,9 @@ const index = () => {
         <div>
           <h4>Our Vision</h4>
           <p>
-            To be a globally recognized African brand, shaping industries, empowering 
+            To  be a globally recognized brand,  shaping industries, empowering 
             communities, and delivering world-class solutions that inspire progress 
-            through collaboration and sustainable enterprise.
+            through collaboration, integrity, and sustainable innovation.
           </p>
         </div>
         <div>

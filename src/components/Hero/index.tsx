@@ -42,7 +42,7 @@ const Index = () => {
           <br/>
           SOREMA GROUP LTD.
         </h1>
-        <p>Driving global business through innovation and partnerships-with integrity and excellence.</p>
+        <p>One Group. Multiple Sectors. A single commitment to innovation, integrity, and excellence.</p>
         <div className="buttons">
           <Link to="/our-services" className="services">
             Our Services
