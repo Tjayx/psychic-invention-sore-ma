@@ -1,4 +1,3 @@
-//slider.tsx
 import { useState } from "react";
 import "./index.css";
 import ProductCard, { type ProductTestimonialCardProps } from "../Product-Card";
