@@ -55,7 +55,8 @@ const index = () => {
           <p className="address">
             283a, Akin Olugbade Street Off Adeola Odeku Victoria Island, Lagos,
             Nigeria
-            <span className="text-[#4282bd]">+234 816 441 8810</span>
+            <span className="text-[#4282bd]">+234 706 874 9844</span>
+            <span className="text-[#4282bd]">info@soremagroup.com</span>
           </p>
         </div>
       </div>
