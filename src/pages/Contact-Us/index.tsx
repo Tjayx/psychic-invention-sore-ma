@@ -37,7 +37,7 @@ const index = () => {
             </div>
             <div>
               <h3>Email address</h3>
-              <p>info@soremagroup.com</p>
+              <p>efosa.ogbeide@soremagroup.com</p>
             </div>
           </div>
           <div className="follow-us">

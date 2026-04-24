@@ -4,6 +4,7 @@ import ServiceCard, {
 } from "../../components/Services-Card";
 import "./index.css";
 import haulageImage from "../../assets/haulage.png";
+import haulageImageII from "../../assets/haulageII.png";
 import supplyImage from "../../assets/supply.jpg";
 import consultancy from "../../assets/easystayimg.png";
 import gadgetsImage from "../../assets/electronics_gadgets.png";
@@ -22,6 +23,11 @@ const index = () => {
 
   const ourServices: ServiceCardProps[] = [
     {
+      content: "Safe and efficient transportation of refined petroleum products.",
+      image: haulageImageII,
+      title: "Petroleum Products Haulage"
+    },
+    {
       content: "Building robust trade networks bringing global brands closer to African markets.",
       image: haulageImage,
       title: "FMCG sales & Distribution",
@@ -30,6 +36,11 @@ const index = () => {
       content: "Comprehensive infrastructure solutions that drive sustainable growth.",
       image: supplyImage,
       title: "Engineering, Procurement & Construction",
+    },
+    {
+      content: "Delivering clean and sustainable energy solutions for Africa's future.",
+      image: installationImage,
+      title: "Solar & Renewable Energy",
     },
     {
       content: "Creating exceptional lifestyle and premium hospitality experiences.",
@@ -41,11 +52,7 @@ const index = () => {
       image: gadgetsImage,
       title: "Electronics & Gadgets",
     },
-    {
-      content: "Delivering clean and sustainable energy solutions for Africa's future.",
-      image: installationImage,
-      title: "Solar & Renewable Energy",
-    },
+    
   ];
 
   return (

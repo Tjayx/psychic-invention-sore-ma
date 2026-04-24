@@ -15,8 +15,12 @@ import detergentBrands from "../../assets/detergentBrands.png";
 import containerised from "../../assets/containerised_storage_unit.png";
 import washingMachine from "../../assets/auto_washing_machine.png";
 import energyMeter from "../../assets/energy_meter.png";
+import wxz280E from "../../assets/wxz-280e.png";
+import wxz280s from "../../assets/wxz280slm.png";
+import wxz450E from "../../assets/wxz-280slx.png";
+import wxz450F from "../../assets/wxz-slm450F.png";
 
-type CategoryType = "FMCGs" | "Electronics" | "Solar";
+type CategoryType = "FMCGs" | "Electronics" | "Solar" | "Equipments";
 
 const index = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>("Electronics");
@@ -54,7 +58,7 @@ const index = () => {
         image: speaker,
       },
     ],
-    "FMCGs": [
+    FMCGs: [
       {
         productName: "Cereals",
         specifications: ["", ""],
@@ -99,9 +103,31 @@ const index = () => {
         image: energyMeter,
       },
     ],
+    Equipments: [
+      {
+        productName: "WXZ-280E",
+        specifications: ["Metal 3D Printing | Prototyping"],
+        image: wxz280E,
+      },
+      {
+        productName: "WXZ-SLM280S",
+        specifications: ["Metal 3D Printing | Prototyping"],
+        image: wxz280s,
+      },
+      {
+        productName: "WXZ-SLM450E",
+        specifications: ["Metal 3D Printing | Prototyping"],
+        image: wxz450E,
+      },
+      {
+        productName: "WXZ-SLM450F",
+        specifications: ["Metal 3D Printing | Prototyping"],
+        image: wxz450F,
+      },
+    ]
   };
 
-  const categories: CategoryType[] = ["FMCGs", "Electronics", "Solar"];
+  const categories: CategoryType[] = ["FMCGs", "Electronics", "Solar", "Equipments"];
 
   // Duplicate products for seamless infinite scroll
   const currentProducts = [

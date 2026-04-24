@@ -16,11 +16,9 @@
   @apply text-[#787878] xl:w-[600px] font-semibold;
 }
 
-.services .our-services-1,
-.our-services-2 {
-  @apply flex flex-col md:flex-row gap-5 mt-[4em];
+.services .our-services-row {
+  @apply flex flex-col md:flex-row gap-5 mt-[3em];
 }
-
 .services .our-services-2 {
   @apply mt-[3em];
 }

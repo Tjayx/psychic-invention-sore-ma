@@ -3,15 +3,17 @@ import Hero from "../../components/Hero";
 import AboutUs from "../../components/About-Us";
 import OurServices from "../../components/Our-Services";
 import vaibImage from "../../assets/vaib_company.png";
-//import shellImage from "../../assets/shell.png";
-//import lngImage from "../../assets/nigeria-lng.jpg";
+import shellImage from "../../assets/shell.png";
+import nnpcImage from "../../assets/nnpc.png";
+import seplatEnergy from "../../assets/seplatEnergy.png";
+import lngImage from "../../assets/nigeria-lng.jpg";
 import btechImage from "../../assets/btech_company.png";
 import fAndfImage from "../../assets/fandf_wines.png";
 import diageoLogo from "../../assets/diageoLogo.png"
 import { motion } from "motion/react";
 
 const index = () => {
-  const clientsImages = [btechImage, vaibImage, fAndfImage, diageoLogo];
+  const clientsImages = [seplatEnergy, nnpcImage, shellImage, btechImage, vaibImage, fAndfImage, diageoLogo, lngImage];
 
   return (
     <div className="landing-page">

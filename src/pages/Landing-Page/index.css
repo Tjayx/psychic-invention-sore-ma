@@ -17,9 +17,9 @@
 }
 
 .landing-page .our-clients div {
-  @apply grid grid-cols-2 md:flex xl:flex xl:items-center gap-[3em] xl:gap-[10em] my-[1em];
+  @apply grid grid-cols-2 md:flex xl:flex xl:items-center gap-[3em] xl:gap-[0.5em] my-[1em];
 }
 
 .our-clients img {
-  @apply w-[100px] xl:w-auto;
+  @apply w-[50px] xl:w-auto;
 }

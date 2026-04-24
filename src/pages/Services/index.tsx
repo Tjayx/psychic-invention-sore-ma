@@ -2,6 +2,7 @@
 import "./index.css";
 import ServicesHero from "../../components/Services-Hero";
 import haulageImage from "../../assets/haulage.jpg";
+import haulageImageII from "../../assets/haulageII.png";
 import supplyImage from "../../assets/supply.jpg";
 import consultancy from "../../assets/easystayimg.png";
 import gadgetsImage from "../../assets/electronics_gadgets.png";
@@ -25,6 +26,12 @@ const index = () => {
         "Our EPC division provides comprehensive infrastructure and industrial solutions that drive sustainable growth. By combining engineering expertise with cutting-edge technology, Sorema delivers high-quality, cost-effective projects that meet global standards and fuel economic development.",
       image: supplyImage,
       title: "Engineering, Procurement & Construction",
+    },
+    {
+      description: 
+        "Our gas haulage services are designed to meet the highest safety standards, utilizing modern transport solutions to deliver gas products securely and efficiently.",
+      image: haulageImageII,
+      title: "Petroleum Products Haulage",
     },
     {
       description:
@@ -59,50 +66,38 @@ const index = () => {
         <h2>What we do</h2>
         <p className="we-offer">
           We offer professional engineering, procurement, construction,
-          installation (EPCI), distribution and hospitality services.
+          installation (EPCI), distribution, safe and efficient transportation 
+          of refined petroleum products and hospitality services.
         </p>
 
         <section id="what-we-do" className="flex flex-col items-center">
-          <motion.div
-            className="our-services-1"
-            animate={{ y: [100, 0], opacity: [0, 1] }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{
-              duration: 1.5,
-              delay: 0.8,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
-            {ourServices.slice(0, 3).map(({ description, image, title }, index) => (
-              <ServiceCard
-                image={image}
-                title={title}
-                description={description}
-                key={index}
-              />
-            ))}
-          </motion.div>
+        {Array.from({ length: Math.ceil(ourServices.length / 3) }).map((_, rowIndex) => {
+          const rowItems = ourServices.slice(rowIndex * 3, rowIndex * 3 + 3);
 
-          <motion.div
-            className="our-services-2"
-            animate={{ y: [100, 0], opacity: [0, 1] }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{
-              duration: 1.5,
-              delay: 0.8,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
-            {ourServices.slice(3, 5).map(({ description, image, title }, index) => (
-              <ServiceCard
-                image={image}
-                title={title}
-                description={description}
-                key={index}
-              />
-            ))}
-          </motion.div>
-        </section>
+          return (
+            <motion.div
+              key={rowIndex}
+              className="our-services-row"
+              animate={{ y: [100, 0], opacity: [0, 1] }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{
+                duration: 1.5,
+                delay: 0.8,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              {rowItems.map(({ description, image, title }, index) => (
+                <ServiceCard
+                  key={index}
+                  image={image}
+                  title={title}
+                  description={description}
+                />
+              ))}
+            </motion.div>
+          );
+        })}
+      </section>
       </motion.div>
       <div className="our-products">
         <h3 className="text-[#6fa0cd] text-lg font-semibold">Our Products</h3>

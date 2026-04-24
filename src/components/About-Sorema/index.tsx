@@ -40,9 +40,9 @@ const index = () => {
             Middle East.
             <br />
             <br />
-            At its core, Sorema Group is driven by a mission:
-            To connect Africa to the world through innovation, 
-            partnerships, and excellence in service delivery.
+            Sorema Group leverages strategic international partnerships to introduce advanced manufacturing 
+            capabilities and emerging technologies into the African market. This ensures our clients benefit 
+            from world class solutions tailored to local realities, combining global standards with deep market understanding.
             <br />
             <br />
             <h4>Our Core Sectors</h4>
